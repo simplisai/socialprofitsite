@@ -1,0 +1,798 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Profit — Negócios com Alma</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Social Profit: Construímos negócios com alma que transformam lucro em impacto organizado. Conheça o 9forlives e nossa metodologia revolucionária.">
+    <meta name="keywords" content="social profit, negócios com propósito, impacto social, 9forlives, sustentabilidade, lucro com propósito">
+    <meta name="author" content="Social Profit">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://socialprofit.com.br">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://socialprofit.com.br">
+    <meta property="og:title" content="Social Profit — Negócios com Alma">
+    <meta property="og:description" content="Construímos negócios com alma que transformam lucro em impacto organizado. Conheça nossa metodologia revolucionária.">
+    <meta property="og:image" content="https://socialprofit.com.br/social-profit-favicon.png">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://socialprofit.com.br">
+    <meta property="twitter:title" content="Social Profit — Negócios com Alma">
+    <meta property="twitter:description" content="Construímos negócios com alma que transformam lucro em impacto organizado.">
+    <meta property="twitter:image" content="https://socialprofit.com.br/social-profit-favicon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="social-profit-favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="social-profit-favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Performance & Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#7ccf00">
+    <meta name="msapplication-TileColor" content="#09090b">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://unpkg.com/lucide@latest/dist/umd/lucide.js" as="script">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '475px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px'
+                },
+                extend: {
+                    colors: {
+                        'custom-bg': '#09090b',
+                        'custom-fg': '#fafafa',
+                        'custom-card': '#18181b',
+                        'custom-border': '#27272a',
+                        'custom-primary': '#7ccf00',
+                        'custom-chart1': '#bbf451',
+                        'custom-chart2': '#9ae600'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'ui-sans-serif', 'system-ui'],
+                        'space': ['Space Grotesk', 'ui-sans-serif', 'system-ui']
+                    },
+                    animation: {
+                        'slideUp': 'slideUp 1s ease-out forwards',
+                        'fadeIn': 'fadeIn 2s ease-out forwards'
+                    },
+                    keyframes: {
+                        slideUp: {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateY(32px)',
+                                filter: 'blur(4px)'
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateY(0)',
+                                filter: 'blur(0)'
+                            }
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        }
+                    },
+                    backdropBlur: {
+                        'xs': '2px'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Melhorias tipográficas e visuais */
+        .badge-scale {
+            transform: scale(0.85);
+            transform-origin: center;
+        }
+
+        @media (max-width: 640px) {
+            .badge-scale {
+                transform: scale(0.8) !important;
+            }
+        }
+
+        /* Padronização tipográfica */
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Melhorias de responsividade */
+        @media (max-width: 475px) {
+            .text-2xl { font-size: 1.25rem; line-height: 1.75rem; }
+            .text-3xl { font-size: 1.5rem; line-height: 2rem; }
+            .text-4xl { font-size: 1.875rem; line-height: 2.25rem; }
+            .text-5xl { font-size: 2.25rem; line-height: 2.5rem; }
+            .text-6xl { font-size: 2.5rem; line-height: 1; }
+            .text-7xl { font-size: 3rem; line-height: 1; }
+            
+            .spacing-section {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            
+            .px-4 { padding-left: 1rem; padding-right: 1rem; }
+            .p-6 { padding: 1rem; }
+            .mb-12 { margin-bottom: 2rem; }
+            .mb-16 { margin-bottom: 2.5rem; }
+            
+            .hero-mobile-spacing {
+                padding-top: 6rem;
+                padding-bottom: 2rem;
+            }
+        }
+
+        @media (min-width: 476px) and (max-width: 640px) {
+            .spacing-section {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+        /* Padronização de border-radius */
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        /* Melhorias de sombras */
+        .shadow-enhanced {
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .shadow-glow {
+            box-shadow: 0 0 20px rgba(124, 207, 0, 0.15);
+        }
+
+        .shadow-glow-strong {
+            box-shadow: 0 0 30px rgba(124, 207, 0, 0.25), 0 10px 40px rgba(124, 207, 0, 0.15);
+        }
+
+        .shadow-modal {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Transições suaves */
+        .transition-enhanced {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Melhorias de contraste */
+        .text-enhanced-contrast {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .text-high-contrast {
+            color: rgba(255, 255, 255, 0.98);
+        }
+
+        .text-medium-contrast {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .text-low-contrast {
+            color: rgba(255, 255, 255, 0.70);
+        }
+
+        /* Melhorias de acessibilidade */
+        .focus-enhanced:focus {
+            outline: 2px solid #7ccf00;
+            outline-offset: 2px;
+        }
+
+        .focus-visible-enhanced:focus-visible {
+            outline: 2px solid #7ccf00;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(124, 207, 0, 0.2);
+        }
+
+        /* Melhorias para leitores de tela */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Espaçamentos consistentes */
+        .spacing-section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            scroll-margin-top: 5rem;
+        }
+
+        @media (min-width: 640px) {
+            .spacing-section {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                scroll-margin-top: 6rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .spacing-section {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        /* Melhorias de hover effects */
+        .hover-lift:hover {
+            transform: translateY(-2px);
+        }
+
+        .hover-glow:hover {
+            box-shadow: 0 0 30px rgba(124, 207, 0, 0.25);
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+
+        .hover-border:hover {
+            border-color: rgba(124, 207, 0, 0.5);
+        }
+
+        .hover-bg:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Correções de alinhamento */
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        /* Melhorias de acessibilidade */
+        .focus-enhanced:focus {
+            outline: 2px solid #7ccf00;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-custom-bg text-custom-fg antialiased selection:bg-custom-primary/20 overflow-x-hidden snap-y snap-mandatory font-inter scroll-pt-20">
+    <!-- Gradientes de fundo sutis -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+        <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full blur-3xl bg-custom-primary/20"></div>
+        <div class="absolute top-1/3 -right-24 h-80 w-80 rounded-full blur-3xl bg-custom-chart2/10"></div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full blur-3xl bg-custom-chart1/10"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 translate-y-1">
+            <div class="mt-3 sm:mt-4 rounded-2xl border border-custom-border bg-black/50 backdrop-blur-xl" style="transform: scale(0.95);">
+                <div class="flex items-center justify-center px-4 sm:px-6 py-3 sm:py-4">
+                    <img src="social-profit-logo.png" alt="Social Profit" class="h-8 sm:h-10 w-auto">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative">
+        <!-- HERO / OPENING -->
+        <section id="hero" data-section="0" class="group snap-start min-h-screen flex hero-mobile-spacing sm:pt-32 pt-24 translate-y-8 items-center justify-center scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full translate-y-6">
+                <div class="relative mx-auto max-w-5xl text-center rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] backdrop-blur-xl shadow-enhanced">
+                    <!-- Fundo reativo -->
+                    <div class="pointer-events-none absolute inset-0 -z-10">
+                        <div class="absolute -inset-x-32 -top-48 h-72 blur-3xl opacity-70" style="background-image: radial-gradient(60% 60% at 50% 50%, rgba(124,207,0,0.18), transparent 60%), radial-gradient(60% 60% at 20% 20%, rgba(187,244,81,0.14), transparent 62%), radial-gradient(50% 50% at 80% 30%, rgba(154,230,0,0.16), transparent 60%);"></div>
+                        <div class="absolute left-1/2 top-[42%] -translate-x-1/2 size-[720px] rounded-full opacity-30" style="background: radial-gradient(closest-side, rgba(124,207,0,0.18), rgba(124,207,0,0.08) 40%, transparent 65%); filter: blur(26px);"></div>
+                        <div class="absolute inset-0 opacity-[0.16]" style="background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 36px 36px; mask-image: radial-gradient(ellipse at center, black 45%, transparent 85%);"></div>
+                    </div>
+
+                    <div class="px-4 sm:px-6 lg:px-10 py-8 sm:py-16 lg:py-32 scale-110">
+                        <div class="flex gap-2 opacity-100 mb-4 sm:mb-6 blur-0 translate-y-0 items-center justify-center" data-animate="" data-delay="0">
+                            <span class="badge-scale inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-2.5 py-1 transition-enhanced">
+                                <span class="size-1 rounded-full bg-custom-primary animate-pulse"></span>
+                                <span class="text-[9px] sm:text-[10px] md:text-[11px] uppercase sm:tracking-[0.24em] text-custom-primary font-light tracking-[0.20em]">Uma Nova Mentalidade Global</span>
+                            </span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 id="hero-h1-1" class="tracking-tight text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-[0.95] mx-auto max-w-4xl text-balance mb-4 sm:mb-6 font-space">
+                            <span class="block bg-clip-text text-transparent opacity-100 blur-0 translate-y-0" data-animate="" data-delay="80" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.98), rgba(161,161,170,0.68)); text-shadow: 0 1px 0 rgba(255,255,255,0.08), 0 12px 40px rgba(124,207,0,0.28);">
+                                "Nem todo problema pode ser resolvido
+                            </span>
+                            <span class="block bg-clip-text text-transparent opacity-100 blur-0 translate-y-0" data-animate="" data-delay="140" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.98), rgba(255,255,255,0.8));">
+                                com dinheiro.
+                            </span>
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <div class="space-y-2 sm:space-y-3 mb-8 sm:mb-12">
+                            <p id="hero-p-1" class="text-xl sm:text-2xl md:text-3xl font-light text-zinc-300 opacity-100 blur-0 translate-y-0" data-animate="" data-delay="200">
+                                Mas os que podem… não têm mais desculpa
+                            </p>
+                            <p id="hero-p-2" class="text-xl sm:text-2xl md:text-3xl font-light text-custom-primary opacity-100 blur-0 translate-y-0" data-animate="" data-delay="260">
+                                para continuar existindo."
+                            </p>
+                        </div>
+
+                        <!-- CTA -->
+                        <button class="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-zinc-900/50 px-6 py-3.5 text-sm sm:text-base font-light text-zinc-300 hover:text-white hover:border-custom-primary/40 hover:bg-zinc-900 transition-enhanced hover:-translate-y-0.5 opacity-100 blur-0 translate-y-0" data-animate="" data-delay="320" data-jump="1">
+                            Entenda Nossa Visão
+                            <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O CHAMADO -->
+        <section id="chamado" data-section="1" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-custom-chart2 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">O Chamado</p>
+                    
+                    <h2 id="chamado-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">O Chamado</h2>
+
+                    <div class="space-y-6 mb-16">
+                        <div class="rounded-xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                            <p id="chamado-p-1" class="text-lg sm:text-xl text-zinc-300 mb-2">A maioria dos problemas da humanidade não</p>
+                            <p id="chamado-p-2" class="text-lg sm:text-xl text-zinc-300">se resolve com dinheiro nem tecnologia.</p>
+                        </div>
+
+                        <div class="grid gap-4 max-w-2xl mx-auto">
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="200">
+                                <p id="chamado-p-3" class="text-red-300">Doenças incuráveis.</p>
+                            </div>
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="240">
+                                <p id="chamado-p-4" class="text-red-300">Guerras movidas por ódio.</p>
+                            </div>
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="280">
+                                <p id="chamado-p-5" class="text-red-300">Feridas que só o tempo e a fé</p>
+                                <p id="chamado-p-6" class="text-red-300">podem curar.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="320">
+                            <p id="chamado-p-7" class="text-lg sm:text-xl text-white mb-4">Nós sabemos disso.</p>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/5 p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="360">
+                            <p id="chamado-p-8" class="text-lg sm:text-xl text-white mb-2">Mas também sabemos outra coisa:</p>
+                            <p id="chamado-p-9" class="text-lg sm:text-xl text-custom-primary font-medium">Existem problemas que já têm solução.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="400">
+                                <p id="chamado-p-10" class="text-lg text-zinc-300">O que falta não é fé, nem capacidade.</p>
+                                <p id="chamado-p-11" class="text-lg text-zinc-300">O que falta é método e foco.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-primary/50 bg-gradient-to-br from-custom-primary/20 to-custom-primary/10 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="440">
+                            <p id="chamado-p-12" class="text-xl sm:text-2xl text-white mb-2">O Social Profit nasceu para acabar</p>
+                            <p id="chamado-p-13" class="text-xl sm:text-2xl text-white mb-2">com a contradição.</p>
+                            <p id="chamado-p-14" class="text-xl sm:text-2xl text-custom-primary font-medium">Se podemos resolver, resolveremos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSA VISÃO -->
+        <section id="visao" data-section="2" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-custom-chart1 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Nossa Visão</p>
+                    
+                    <h2 id="visao-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">Nossa Visão</h2>
+
+                    <div class="space-y-6 mb-16">
+                        <div class="grid gap-4">
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                                <p id="visao-p-1" class="text-lg text-red-300">Não somos uma ONG.</p>
+                            </div>
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="180">
+                                <p id="visao-p-2" class="text-lg text-red-300">Não pedimos doações.</p>
+                            </div>
+                            <div class="rounded-lg border border-red-400/20 bg-red-400/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="220">
+                                <p id="visao-p-3" class="text-lg text-red-300">Não fazemos caridade para aliviar consciências.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/10 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="260">
+                            <p id="visao-p-4" class="text-xl sm:text-2xl text-custom-primary font-medium mb-4">Nós construímos negócios com alma.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="300">
+                                <p id="visao-p-5" class="text-lg text-zinc-300">Negócios que existam para lucrar, sim.</p>
+                            </div>
+                            <div class="rounded-lg border border-custom-chart2/20 bg-custom-chart2/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="340">
+                                <p id="visao-p-6" class="text-lg text-custom-chart2">Mas negócios que entendem que lucro é</p>
+                                <p id="visao-p-7" class="text-lg text-custom-chart2">apenas o combustível para algo maior:</p>
+                            </div>
+                            <div class="rounded-xl border border-custom-chart1/30 bg-custom-chart1/10 p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="380">
+                                <p id="visao-p-8" class="text-lg sm:text-xl text-custom-chart1">resolver os problemas que podem ser resolvidos</p>
+                                <p id="visao-p-9" class="text-lg sm:text-xl text-custom-chart1">nesta geração.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODELO SOCIAL PROFIT -->
+        <section id="modelo" data-section="3" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-custom-primary font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Metodologia</p>
+                    
+                    <h2 id="modelo-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">O Modelo Social Profit</h2>
+
+                    <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/5 p-8 mb-12 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                        <p id="modelo-p-1" class="text-xl sm:text-2xl text-white mb-6">Nosso método é simples e inegociável:</p>
+                    </div>
+
+                    <ol id="modelo-ol-1" class="space-y-6 mb-12">
+                        <li id="modelo-li-1-1" class="flex items-start gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="200">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-custom-primary/20 flex items-center justify-center">
+                                <span class="text-custom-primary font-medium">1</span>
+                            </div>
+                            <p class="text-lg text-zinc-300">Identificamos problemas concretos que já podem ser solucionados.</p>
+                        </li>
+                        
+                        <li id="modelo-li-1-2" class="flex items-start gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="240">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-custom-primary/20 flex items-center justify-center">
+                                <span class="text-custom-primary font-medium">2</span>
+                            </div>
+                            <p class="text-lg text-zinc-300">Criamos negócios sustentáveis que destinam parte do lucro.</p>
+                        </li>
+                        
+                        <li id="modelo-li-1-3" class="flex items-start gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="280">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-custom-primary/20 flex items-center justify-center">
+                                <span class="text-custom-primary font-medium">3</span>
+                            </div>
+                            <p class="text-lg text-zinc-300">Conectamos tudo em ecossistemas interligados.</p>
+                        </li>
+                        
+                        <li id="modelo-li-1-4" class="flex items-start gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="320">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-custom-primary/20 flex items-center justify-center">
+                                <span class="text-custom-primary font-medium">4</span>
+                            </div>
+                            <p class="text-lg text-zinc-300">Garantimos transparência total em cada operação.</p>
+                        </li>
+                    </ol>
+
+                    <div class="space-y-4">
+                        <div class="rounded-lg border border-custom-chart2/20 bg-custom-chart2/5 p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="360">
+                            <p id="modelo-p-2" class="text-lg sm:text-xl text-custom-chart2">Transformamos lucro em impacto organizado.</p>
+                        </div>
+                        <div class="rounded-lg border border-custom-chart1/20 bg-custom-chart1/5 p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="400">
+                            <p id="modelo-p-3" class="text-lg sm:text-xl text-custom-chart1">Construímos negócios que são respostas diretas</p>
+                            <p id="modelo-p-4" class="text-lg sm:text-xl text-custom-chart1">a problemas reais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXEMPLO VIVO 9FORLIVES -->
+        <section id="exemplo-9forlives" data-section="4" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-green-400 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Caso Prático</p>
+                    
+                    <h2 id="9forlives-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">Exemplo Vivo: 9forlives</h2>
+
+                    <div class="rounded-xl border border-green-400/30 bg-green-400/10 p-8 mb-12 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                        <p id="9forlives-p-1" class="text-xl sm:text-2xl text-green-400 mb-6">O 9forlives é a materialização do Social Profit.</p>
+                    </div>
+
+                    <div class="space-y-6 mb-12">
+                        <div class="rounded-lg border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="200">
+                            <p id="9forlives-p-2" class="text-lg text-zinc-300 mb-2">Um problema simples, objetivo e gritante:</p>
+                            <p id="9forlives-p-3" class="text-lg text-zinc-300">Milhões de cristãos querem ter acesso à Bíblia,</p>
+                            <p id="9forlives-p-4" class="text-lg text-zinc-300">mas não conseguem.</p>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/5 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="240">
+                            <p id="9forlives-p-5" class="text-xl text-custom-primary mb-6">O 9forlives responde com clareza:</p>
+                        </div>
+
+                        <ul id="9forlives-ul-1" class="space-y-4">
+                            <li id="9forlives-li-1-1" class="flex items-start gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="280">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-zinc-300">A assinatura vira créditos de impacto.</span>
+                            </li>
+                            <li id="9forlives-li-1-2" class="flex items-start gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="320">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Missionários locais cadastram pedidos reais.</span>
+                            </li>
+                            <li id="9forlives-li-1-3" class="flex items-start gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="360">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-zinc-300">O sistema conecta crédito à necessidade.</span>
+                            </li>
+                            <li id="9forlives-li-1-4" class="flex items-start gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="400">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-zinc-300">A Bíblia certa vai para a pessoa certa.</span>
+                            </li>
+                            <li id="9forlives-li-1-5" class="flex items-start gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="440">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-zinc-300">O financiador recebe prova viva em vídeo.</span>
+                            </li>
+                        </ul>
+
+                        <div class="rounded-xl border border-custom-chart1/30 bg-custom-chart1/10 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="480">
+                            <p id="9forlives-p-6" class="text-xl text-custom-chart1 mb-2">Constância. União. Transparência.</p>
+                            <p id="9forlives-p-7" class="text-lg text-zinc-300 mb-2">O tripé que sustenta um movimento global.</p>
+                            <p id="9forlives-p-8" class="text-lg text-zinc-300">Transforma pequenas contribuições em fluxo contínuo</p>
+                            <p id="9forlives-p-9" class="text-lg text-zinc-300">de transformação espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O ECOSSISTEMA -->
+        <section id="ecossistema" data-section="5" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-custom-chart2 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Estrutura</p>
+                    
+                    <h2 id="ecossistema-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">O Ecossistema que Torna Possível</h2>
+
+                    <div class="space-y-6 mb-12">
+                        <div class="rounded-lg border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                            <p id="ecossistema-p-1" class="text-lg text-zinc-300">O Social Profit não cria ideias soltas.</p>
+                            <p id="ecossistema-p-2" class="text-lg text-zinc-300">Ele constrói ecossistemas.</p>
+                        </div>
+
+                        <!-- SimplisPay -->
+                        <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/5 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="200">
+                            <h3 id="simplispay-h3-1" class="text-xl sm:text-2xl font-medium text-custom-primary mb-4">SimplisPay — O motor financeiro</h3>
+                            <div class="space-y-3 text-left">
+                                <p id="simplispay-p-1" class="text-zinc-300">Fintech própria que processa todas as assinaturas.</p>
+                                <p id="simplispay-p-2" class="text-zinc-300">Faz o split automático para fornecedores e logística.</p>
+                                <p id="simplispay-p-3" class="text-zinc-300">Garante que 100% do valor vá direto para</p>
+                                <p id="simplispay-p-4" class="text-zinc-300">a Bíblia e a entrega.</p>
+                                <p id="simplispay-p-5" class="text-custom-primary font-medium">Não existe "caixa".</p>
+                                <p id="simplispay-p-6" class="text-zinc-300">O dinheiro entra e sai na mesma operação.</p>
+                                <p id="simplispay-p-7" class="text-zinc-300">Com rastreabilidade absoluta.</p>
+                            </div>
+                        </div>
+
+                        <!-- Besimplis -->
+                        <div class="rounded-xl border border-custom-chart2/30 bg-custom-chart2/5 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="260">
+                            <h3 id="besimplis-h3-1" class="text-xl sm:text-2xl font-medium text-custom-chart2 mb-4">Besimplis — A engrenagem tecnológica</h3>
+                            <div class="space-y-3 text-left">
+                                <p id="besimplis-p-1" class="text-zinc-300">Empresa que criou a plataforma e os algoritmos.</p>
+                                <p id="besimplis-p-2" class="text-zinc-300">Matching entre assinantes, missionários e beneficiários.</p>
+                                <p id="besimplis-p-3" class="text-zinc-300">Painéis de impacto e trilhas de auditoria.</p>
+                                <p id="besimplis-p-4" class="text-zinc-300">Evolução contínua sem pesar sobre o fluxo</p>
+                                <p id="besimplis-p-5" class="text-zinc-300">do impacto.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-chart1/30 bg-custom-chart1/10 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="320">
+                            <p id="ecossistema-p-3" class="text-lg text-zinc-300 mb-2">Graças à SimplisPay e à Besimplis,</p>
+                            <p id="ecossistema-p-4" class="text-lg text-zinc-300">o 9forlives escala com transparência radical</p>
+                            <p id="ecossistema-p-5" class="text-lg text-zinc-300">e sustentabilidade real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILOSOFIA -->
+        <section id="filosofia" data-section="6" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-purple-400 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Nossos Princípios</p>
+                    
+                    <h2 id="filosofia-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">A Filosofia que Nos Move</h2>
+
+                    <div class="space-y-6">
+                        <div class="rounded-lg border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                            <p id="filosofia-p-1" class="text-lg text-zinc-300 mb-2">Nós não acreditamos que o dinheiro possa tudo.</p>
+                            <p id="filosofia-p-2" class="text-lg text-zinc-300">Mas acreditamos que o dinheiro pode muito mais</p>
+                            <p id="filosofia-p-3" class="text-lg text-zinc-300">do que está fazendo hoje.</p>
+                        </div>
+
+                        <div class="rounded-xl border border-red-400/30 bg-red-400/5 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="200">
+                            <p id="filosofia-p-4" class="text-lg text-red-300 mb-2">Se já existe o remédio, é inaceitável</p>
+                            <p id="filosofia-p-5" class="text-lg text-red-300">ver pessoas morrerem por falta dele.</p>
+                        </div>
+
+                        <div class="rounded-xl border border-custom-primary/30 bg-custom-primary/10 p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="260">
+                            <p id="filosofia-p-6" class="text-lg text-white mb-2">Não vamos resolver todos os problemas da humanidade.</p>
+                            <p id="filosofia-p-7" class="text-lg text-custom-primary mb-2">Mas os que podemos resolver,</p>
+                            <p id="filosofia-p-8" class="text-lg text-custom-primary">não passarão para a próxima geração.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONVITE -->
+        <section id="convite" data-section="7" class="group snap-start min-h-screen flex items-center justify-center spacing-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-xs uppercase tracking-widest text-custom-chart1 font-light mb-8 opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="0">Faça Parte</p>
+                    
+                    <h2 id="convite-h2-1" class="text-2xl sm:text-3xl md:text-4xl font-light mb-12 tracking-tight text-white opacity-0 translate-y-6 blur-sm transition-all duration-700 ease-out" data-animate="" data-delay="80">O Convite</h2>
+
+                    <div class="space-y-6 mb-12">
+                        <div class="rounded-lg border border-white/10 bg-white/[0.03] p-6 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="140">
+                            <p id="convite-p-1" class="text-lg text-zinc-300">O Social Profit não pede esmolas.</p>
+                            <p id="convite-p-2" class="text-lg text-zinc-300">Ele abre caminho para uma nova mentalidade global.</p>
+                        </div>
+
+                        <div class="grid gap-4">
+                            <div class="rounded-lg border border-custom-primary/20 bg-custom-primary/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="180">
+                                <p id="convite-p-3" class="text-custom-primary">Lucro com propósito.</p>
+                            </div>
+                            <div class="rounded-lg border border-custom-chart2/20 bg-custom-chart2/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="220">
+                                <p id="convite-p-4" class="text-custom-chart2">Ecossistemas que resolvem.</p>
+                            </div>
+                            <div class="rounded-lg border border-custom-chart1/20 bg-custom-chart1/5 p-4 transition-enhanced hover-lift opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="260">
+                                <p id="convite-p-5" class="text-custom-chart1">Negócios que não fecham os olhos</p>
+                                <p id="convite-p-6" class="text-custom-chart1">para o que pode ser feito.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-white/10 bg-white/[0.03] p-8 transition-enhanced hover-lift shadow-enhanced opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="300">
+                            <p id="convite-p-7" class="text-lg text-zinc-300 mb-2">O 9forlives é apenas o primeiro.</p>
+                            <p id="convite-p-8" class="text-lg text-zinc-300 mb-2">Outros virão.</p>
+                            <p id="convite-p-9" class="text-lg text-zinc-300 mb-4">E cada um terá uma marca em comum:</p>
+                            <p id="convite-p-10" class="text-lg text-custom-primary">lucro transformado em impacto,</p>
+                            <p id="convite-p-11" class="text-lg text-custom-primary">problema transformado em solução.</p>
+                        </div>
+                    </div>
+
+                    <button id="convite-cta-1" class="group inline-flex items-center gap-3 rounded-full bg-custom-primary px-8 py-4 text-lg font-medium text-custom-bg hover:bg-custom-chart2 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl opacity-0 translate-y-6 blur-sm duration-700 ease-out" data-animate="" data-delay="340">
+                        Quero Conhecer o Movimento
+                        <i data-lucide="arrow-right" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Sistema de animações bidirecionais com detecção de scroll
+        (function () {
+            const els = document.querySelectorAll('[data-animate]');
+            if (!('IntersectionObserver' in window)) {
+                els.forEach(el => el.classList.add('opacity-100','translate-y-0','blur-0'));
+                return;
+            }
+            
+            let lastScrollY = window.scrollY;
+            let scrollDirection = 'down';
+            let animationTimeouts = new Map();
+            
+            const updateScrollDirection = () => {
+                const currentScrollY = window.scrollY;
+                scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+                lastScrollY = currentScrollY;
+            };
+            
+            let scrollTimeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateScrollDirection, 10);
+            }, { passive: true });
+            
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const el = entry.target;
+                    const delay = parseInt(el.getAttribute('data-delay') || '0', 10);
+                    
+                    if (animationTimeouts.has(el)) {
+                        clearTimeout(animationTimeouts.get(el));
+                        animationTimeouts.delete(el);
+                    }
+                    
+                    if (entry.isIntersecting) {
+                        const timeout = setTimeout(() => {
+                            el.classList.add('opacity-100', 'translate-y-0', 'blur-0');
+                            el.classList.remove('opacity-0', 'translate-y-6', 'blur-sm');
+                            animationTimeouts.delete(el);
+                        }, scrollDirection === 'down' ? delay : Math.max(delay - 100, 0));
+                        
+                        animationTimeouts.set(el, timeout);
+                    }
+                });
+            }, { 
+                root: null, 
+                threshold: 0.15, 
+                rootMargin: '0px 0px -15% 0px' 
+            });
+            
+            els.forEach(el => {
+                if (!el.classList.contains('opacity-100')) {
+                    el.classList.add('opacity-0', 'translate-y-6', 'blur-sm');
+                }
+                io.observe(el);
+            });
+        })();
+
+        // Scroll suave para seções via [data-jump]
+        (function () {
+            const buttons = document.querySelectorAll('[data-jump]');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const idx = btn.getAttribute('data-jump');
+                    const section = document.querySelector(`[data-section="${idx}"]`);
+                    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        })();
+
+        // Top Navigation scroll behavior
+        (function() {
+            const topNavigation = document.querySelector('nav');
+            const topNavContainer = topNavigation.querySelector('div > div');
+            let isScrolled = false;
+            
+            function handleTopNavScroll() {
+                const scrollY = window.scrollY;
+                
+                if (scrollY > 50 && !isScrolled) {
+                    isScrolled = true;
+                    topNavContainer.style.transform = 'scale(0.95)';
+                    topNavigation.style.opacity = '0.95';
+                } else if (scrollY <= 50 && isScrolled) {
+                    isScrolled = false;
+                    topNavContainer.style.transform = 'scale(1)';
+                    topNavigation.style.opacity = '1';
+                }
+            }
+            
+            window.addEventListener('scroll', handleTopNavScroll, { passive: true });
+        })();
+
+        // CTA functionality
+        document.getElementById('convite-cta-1').addEventListener('click', function() {
+            alert('Redirecionando para mais informações sobre o Social Profit...');
+        });
+    </script>
+
+</body></html>
